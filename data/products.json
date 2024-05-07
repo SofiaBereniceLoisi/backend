@@ -160,5 +160,16 @@
     "thumbnails": [
       "imagen14.jpg"
     ]
+  },
+  {
+    "id": 15,
+    "title": "Producto 15",
+    "description": "Descripción del producto 15",
+    "price": 100,
+    "code": "B666",
+    "stock": 13,
+    "status": true,
+    "category": "Sandalias",
+    "thumbnails": []
   }
 ]

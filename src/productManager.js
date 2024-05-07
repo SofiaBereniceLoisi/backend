@@ -17,10 +17,11 @@ class ProductManager {
         }
     }
 
-    addProduct = async (title, description, price, code, stock, status, category, thumbnails) => {
+    addProduct = async (productData) => {
 
         try {
             const products = await this.getProducts()
+            const {title, description, price, code, stock, status=true, category, thumbnails} = productData;
 
             if (!title.trim() || !description.trim() || !price || !code || !stock || !status || !category.trim()) {
                 console.log('Error: Debes llenar todos los campos.');
